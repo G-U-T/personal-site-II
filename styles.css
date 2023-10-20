@@ -1,0 +1,48 @@
+:root {
+	--bg-color: #3a3037;
+	--dark-gray: #575156;
+	--gray: #838b89;
+	--tan: #d8cbb2;
+	--white: #edece0;
+}
+
+body {
+	background-color: var(--bg-color);
+	color: var(--tan);
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+
+	height: 20%;
+	border-radius: 5%;
+	background-color: var(--dark-gray);
+}
+nav > button {
+	width: 20%;
+	height: 85%;
+}
+
+button {
+	background-color: var(--bg-color);
+	color: var(--white);
+
+	border: 2px solid var(--tan);
+}
+button:hover {
+	background-color: var(--dark-gray);
+}
+
+@media (min-width: 800px) {
+	button > a {
+		font-size: 200%;
+	}
+}
+@media (max-width: 350px) {
+	button > a {
+		font-size: 45%;
+	}
+}
