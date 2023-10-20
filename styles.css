@@ -8,7 +8,7 @@
 
 body {
 	background-color: var(--bg-color);
-	background-image: linear-gradient(to right, var(--bg-color), black, var(--bg-color));
+	background-image: linear-gradient(to right, var(--bg-color), var(--dark-gray), var(--bg-color));
 	color: var(--tan);
 }
 
@@ -59,10 +59,16 @@ button:disabled > a {
 		transition-duration: 0.3s;
 	}
 }
+@media (max-width: 500px) {
+	label {
+		font-size: 0.66em !important;
+	}
+}
 
 img {
 	max-width: 20em;
 	max-height: 20em;
+	border: 0.5em solid black;
 }
 
 .center-flex {
@@ -71,4 +77,29 @@ img {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+}
+.form-input-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+	gap: 1em;
+	margin: 1em;
+}
+
+form {
+	margin: 2em;
+	font-size: large;
+}
+label {
+	font-size: 2em;
+}
+input {
+	background-color: var(--white);
+	border: 2px solid var(--bg-color);
+	box-shadow: 2px 3px black;
+}
+input[type=submit] {
+	padding: 0.5em;
 }
