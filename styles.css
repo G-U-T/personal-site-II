@@ -35,6 +35,16 @@ button {
 button:hover {
 	background-color: var(--dark-gray);
 }
+button:disabled {
+	background-color: var(--tan);
+}
+
+a {
+	color: var(--white);
+}
+button:disabled > a {
+	color: var(--bg-color);
+}
 
 @media (min-width: 800px) {
 	button > a {
@@ -45,4 +55,17 @@ button:hover {
 	button > a {
 		font-size: 45%;
 	}
+}
+
+img {
+	max-width: 20em;
+	max-height: 20em;
+}
+
+.center-flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
